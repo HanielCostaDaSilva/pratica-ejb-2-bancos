@@ -2,7 +2,7 @@ target/*
 target
 
 *.class
-
+.DS_Store
 # intellij
 *.idea
 .idea
