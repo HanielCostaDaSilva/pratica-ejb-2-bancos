@@ -17,6 +17,7 @@ public class UsuarioDAO {
         em.persist(novoUsuario);
     }
 
+    @SuppressWarnings("unchecked")
     public List<Usuario> listar() {
         return em.createQuery("FROM Usuario").getResultList();
     }

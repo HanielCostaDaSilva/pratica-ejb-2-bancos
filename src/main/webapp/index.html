@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Aplicação Teste</title>
 </head>
+
 <body>
     <h1>Aplicativo exemplo de uso de EJB</h1>
     <p>Obs.: tentar inserir com id=3 lançará uma exceção de "Menor de idade inválido". <br>
@@ -11,17 +13,36 @@
         Lembre-se que a cada reinício do servidor, os dados serão apagados.
     </p>
     <br>
+
+    <!-- Formulário para inserir usuários -->
     <form action="usuario.do" method="GET">
         Id: <input name="id"><br>
         Nome: <input name="nome">
         <input type="hidden" name="oper" value="1" />
-        <button>Inserir</button>
+        <button>Inserir Usuário</button>
     </form>
     <br>
+
+    <!-- Listar usuários -->
     <form action="usuario.do" method="GET">
         <input type="hidden" name="oper" value="2" />
         <button>Listar Usuários</button>
     </form>
+    <br>
+
+    <!-- Formulário para inserir mensagens -->
+    <form action="message.do" method="GET">
+        Mensagem: <input name="mensagem">
+        <input type="hidden" name="oper" value="1" />
+        <button>Enviar Mensagem</button>
+    </form>
+    <br>
+    <!-- Listar mensagens -->
+    <form action="message.do" method="GET">
+        <input type="hidden" name="oper" value="2" />
+        <button>Listar Mensagens</button>
+    </form>
 
 </body>
+
 </html>
